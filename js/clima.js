@@ -11,3 +11,8 @@ navigator.geolocation.getCurrentPosition(function (position) {
     });
 
 });
+
+//iconos del clima
+//https://github.com/erikflowers/weather-icons
+//http://merlinthered.deviantart.com/art/plain-weather-icons-157162192
+//https://github.com/jgillich/brackets-rpm
