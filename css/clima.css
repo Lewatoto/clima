@@ -8,12 +8,14 @@
     background: blue;
     width: 80%;
     float:left;
+    color: white;
 }
 
 #temp_a{
     background: green;
     width: 20%;
     float: left;
+    color: white;
 }
 
 #descripcion{
@@ -39,15 +41,19 @@
     width: 25%;
     background: magenta;
     float: left;
+    color: white;
 }
 
-#dia_1{
-    background: lime;
-}
 
 #img_1{
     background: brown;
     width: 70%;
+    float: left;
+}
+
+#temp_mm_1{
+    width: 30%;
+    background: lightsteelblue;
     float: left;
 }
 

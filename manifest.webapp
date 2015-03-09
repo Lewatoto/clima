@@ -1,0 +1,18 @@
+{
+  "name": "Clima",
+  "description": "Otra aplicación del clima",
+  "launch_path": "/index.html",
+  "icons": {
+    "128": "/img/icon/128.png"
+  },
+  "developer": {
+    "name": "Gerson Alvarado",
+    "url": "http://frechako.blogspot.com"
+  },
+  "install_allowed_from": ["*"],
+  "permissions":{
+    "geolocation": {
+        "description": "Requerida para inidcar el clima en tu zona"
+    }
+  }
+}
