@@ -10,54 +10,64 @@
 </head>
 <body>
     <div id="contenido">
-        <div id="ciudad"></div>
-        <div id="temp_a"></div>
-        <div id="descripcion"></div>
-        <div id="temp_mm">
-            Min.<br> <div id="temp_min"></div> Max. <br> <div id="temp_max"></div>
-        </div>
-        <div id="img_hoy">  
-            <center>
-                <img src="./img/svg/na.svg" id="hoy_i" width="60%">
-            </center>
-        </div>
-        <div id="dias_3">
-            <!--    ===================================
-                    = Ponostico para el dia siguiente =
-                    ===================================     -->
-            <div id="dia_1n" class="dias"></div>
-            <div id="dia_1"> 
-                <div id="img_1">
-                    <center>
-                        <img src="./img/svg/na.svg" id="dia_1_i" width="60%">
-                    </center>
-                </div>
-                <div id="temp_mm_1" class="tem_lat">
-                    Min.<br>
-                    <div id="min_1"></div>
-                    Max.<br>
-                    <div id="max_1"></div>
-                </div>
+        <div id="estado_hoy">
+            <div id="ciudad"></div>
+            <div id="temp_a"></div>
+            <div id="descripcion"></div>
+            <div id="temp_mm">
+                mín.<br> 
+                <div id="temp_min"></div> 
+                máx. <br> 
+                <div id="temp_max"></div>
+                Húmedad <br> 
+                <div id="humedad"></div>
             </div>
-            <!--    ===================================
-                    =   Ponostico para pasado mañana  =
-                    ===================================   --> 
-            <div id="dia_2n" class="dias"></div>
-            <div id="dia_2"> 
-                <div id="img_2">
-                    <center>
-                        <img src="./img/svg/na.svg" id="dia_2_i" width="60%">
-                    </center>
+            <div id="img_hoy">  
+                <center>
+                    <img src="./img/svg/na.svg" id="hoy_i" width="60%">
+                </center>
+            </div>
+            <!--    ========================================
+                    = Ponostico para los 2 dias siguientes =
+                    ========================================     -->
+            <div id="dias_2">
+                <!--    =========
+                        = Dia 1 =
+                        =========     -->
+                <div id="dia_1n" class="dias"></div>
+                <div id="dia_1"> 
+                    <div id="img_1">
+                        <center>
+                            <img src="./img/svg/na.svg" id="dia_1_i" width="60%">
+                        </center>
+                    </div>
+                    <div id="temp_mm_1" class="tem_lat">
+                        mín<br>
+                        <div id="min_1"></div>
+                        máx<br>
+                        <div id="max_1"></div>
+                    </div>
                 </div>
-                <div id="temp_mm_2" class="tem_lat">
-                    Min.<br>
-                    <div id="min_2"></div>
-                    Max.<br>
-                    <div id="max_2"></div>
-                </div>
-            </div> 
+                <!--    =========
+                        = Dia 2 =
+                        =========   --> 
+                <div id="dia_2n" class="dias"></div>
+                <div id="dia_2"> 
+                    <div id="img_2">
+                        <center>
+                            <img src="./img/svg/na.svg" id="dia_2_i" width="60%">
+                        </center>
+                    </div>
+                    <div id="temp_mm_2" class="tem_lat">
+                        mín.<br>
+                        <div id="min_2"></div>
+                        máx.<br>
+                        <div id="max_2"></div>
+                    </div>
+                </div> 
+            </div>
+            <div id="organizador1"></div>
         </div>
-        <div id="organizador1"></div>
         <footer>
             Footer
         </footer>

@@ -1,13 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,200);
 body{
     background: white;
-    transition: background 0.8s linear;
+    color: white;
 }
 
 #contenido {
     width: 80%;
     margin: 0 auto;
-    background: yellow;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
 }
@@ -20,8 +19,14 @@ body{
     font-size: 1.8rem;
 }
 
+#estado_hoy{
+    padding: 1rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
 #ciudad {
-    background: blue;
+    //background: blue;
     width: 80%;
     float:left;
     color: white;
@@ -29,7 +34,7 @@ body{
 }
 
 #temp_a{
-    background: green;
+    //background: green;
     width: 20%;
     float: left;
     color: white;
@@ -38,7 +43,7 @@ body{
 }
 
 #descripcion{
-    background: gray;
+    //background: gray;
     margin: 0 auto;
     clear: both;
     text-align: center;
@@ -47,55 +52,61 @@ body{
 
 #temp_mm {
     width: 25%;
-    background: orange;
+    //background: orange;
     float: left;
     font-size: 3rem;
 }
 
 #img_hoy{
     width: 50%;
-    background: red;
+    //background: red;
     float: left
 }
 
-#dias_3{
+#dias_2{
     width: 25%;
-    background: magenta;
+    background: rgba(250,250,250,0.2);
     float: left;
     color: white;
+    border-radius: .5rem;
 }
 
 #dia_1n{
     width: 100%;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
 }
 
 #img_1{
-    background: brown;
-    width: 70%;
+    //background: brown;
+    width: 60%;
     float: left;
 }
 
 #temp_mm_1{
-    width: 30%;
-    background: lightsteelblue;
+    width: 35%;
+    //background: lightsteelblue;
     float: left;
     text-align: right;
+    padding-right: 1rem;
 }
 
 #dia_2n{
     width: 100%;
     float: left;
+    padding-left: 1rem;
 }
 
 #img_2{
-    background: limegreen;
-    width: 70%;
+    //background: limegreen;
+    width: 60%;
     float: left;
 }
 
 #temp_mm_2{
-    width: 30%;
-    background: lightsteelblue;
+    width: 35%;
+    padding-right: 1rem;
+    ///background: lightsteelblue;
     float: left;
     text-align: right;
 }
