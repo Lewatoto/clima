@@ -1,0 +1,60 @@
+#contenido {
+    width: 80%;
+    margin: 0 auto;
+    background: yellow;
+}
+
+#ciudad {
+    background: blue;
+    width: 80%;
+    float:left;
+}
+
+#temp_a{
+    background: green;
+    width: 20%;
+    float: left;
+}
+
+#descripcion{
+    background: gray;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
+
+#temp_mm {
+    width: 25%;
+    background: orange;
+    float: left;
+}
+
+#img_hoy{
+    width: 50%;
+    background: red;
+    float: left
+}
+
+#dias_3{
+    width: 25%;
+    background: magenta;
+    float: left;
+}
+
+#dia_1{
+    background: lime;
+}
+
+#img_1{
+    background: brown;
+    width: 70%;
+    float: left;
+}
+
+#organizador1{
+    clear: both
+}
+
+footer{
+    background: blueviolet;
+}
