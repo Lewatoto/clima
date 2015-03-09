@@ -24,7 +24,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
         $("#temp_max").append(temp_max.toFixed(2)+"°C");
         $("#descripcion").append(cond + ", " + cond_d);
         var cambio = './img/svg/' + icon_d + '.svg';
-        alert(cambio);
+        //alert(cambio);
         $('#hoy_i').attr('src',cambio);
         
         // ==============================================================
