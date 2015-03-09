@@ -1,3 +1,6 @@
+var dias = new Array('Dom','Lun','Mar','Mie','Jue','Vie','Sab');
+var fecha = new Date();
+
 navigator.geolocation.getCurrentPosition(function (position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
@@ -41,9 +44,21 @@ navigator.geolocation.getCurrentPosition(function (position) {
         $("#min_1").append(temp_min_1.toFixed(2)+"°C");
         $("#max_1").append(temp_max_1.toFixed(2)+"°C");
         $("#dia_1_i").attr("src",cambio_1);
+        $("#dia_1n").append(dias[fecha.getDay()+1]);
     });
 
-});
+}, geo_options);
+
+var geo_options = {
+  enableHighAccuracy: true, 
+  maximumAge        : 30000, 
+  timeout           : 27000
+};
+
+
+
+alert
+
 
 //iconos del clima
 //https://github.com/erikflowers/weather-icons
