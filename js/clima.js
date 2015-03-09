@@ -4,7 +4,7 @@ var fecha = new Date();
 navigator.geolocation.getCurrentPosition(function (position) {
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
-    var enlace = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&cnt=7&APPID=d17f9da8c5afba9cfe7f4f1c63b24a71";
+    var enlace = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=" + lat + "&lon=" + lon + "&cnt=7&APPID=d17f9da8c5afba9cfe7f4f1c63b24a71&lang=sp";
     //alert(enlace);
     $.getJSON(enlace, function (datos) { //obtiene los datos y los guarda en la variable datos
         // ==============================================================
@@ -18,7 +18,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
         var cond = datos.list[0].weather[0].main; //descripción del estado lluvia, soleado, etc.
         var cond_d = datos.list[0].weather[0].description; //descripción del estado mas detallado "el cielo está despejado".
         var icon_d = datos.list[0].weather[0].icon; //indica que icono usar.
-        alert(datos.city.name);
+        //alert(datos.city.name);
         
         // Mostrando los datos en la aplicación
         $("#ciudad").append(datos.city.name);
@@ -61,6 +61,13 @@ navigator.geolocation.getCurrentPosition(function (position) {
         $("#max_2").append(temp_max_2.toFixed(2)+"°C");
         $("#dia_2_i").attr("src",cambio_2);
         $("#dia_2n").append(dias[fecha.getDay()+2]);
+        
+        //cambiar el color de fondo
+        
+        $('body').css({"background-color": "#0b2b42"},
+                      {"background": "@include filter-gradient(#0b2b42, #467ea3, vertical)"},
+                      {"background": "@include background-image(linear-gradient(top, #0b2b42 0%, #467ea3 100%))"}
+                     );
     });
 
 }, geo_options);
