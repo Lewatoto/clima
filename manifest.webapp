@@ -3,7 +3,14 @@
   "description": "Otra aplicación del clima",
   "launch_path": "/index.html",
   "icons": {
-    "128": "/img/icon/128.png"
+    "16": "/img/icon/icon.svg",
+    "30": "/img/icon/icon.svg",
+    "32": "/img/icon/icon.svg",
+    "48": "/img/icon/icon.svg",
+    "60": "/img/icon/icon.svg",
+    "64": "/img/icon/icon.svg",
+    "128": "/img/icon/icon.svg",
+    "256": "/img/icon/icon.svg"
   },
   "developer": {
     "name": "Gerson Alvarado",

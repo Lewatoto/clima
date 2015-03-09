@@ -1,0 +1,35 @@
+<html>
+  <body>
+    <p>Packaged app installation page</p>
+    <script>
+        var instalarp = function () {
+      // This URL must be a full url.
+      var manifestUrl = 'http://lewatoto.github.io/calculadora-rlc/package.manifest';
+      var req = navigator.mozApps.installPackage(manifestUrl);
+      req.onsuccess = function() {
+        alert(this.result.origin);
+      };
+      req.onerror = function() {
+        alert(this.error.name);
+      };
+        };
+        
+       // var instalaro = function () {
+      // This URL must be a full url.
+      var manifestUrl = 'http://lewatoto.github.io/clima/manifest.webapp';
+      var req = navigator.mozApps.install(manifestUrl);
+      req.onsuccess = function() {
+        alert(this.result.origin);
+      };
+      req.onerror = function() {
+        alert(this.error.name);
+      };
+       // };
+    </script>
+      <button onclick="instalarp">instalar paquete</button>
+      <br>
+      <br>
+      <button onclick="instalaro">instalar en linea</button>
+
+  </body>
+</html>
