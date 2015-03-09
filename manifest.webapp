@@ -1,7 +1,7 @@
 {
   "name": "Clima",
   "description": "Otra aplicación del clima",
-  "launch_path": "/index.html",
+  "launch_path": "/clima/index.html",
   "icons": {
     "16": "/img/icon/icon.svg",
     "30": "/img/icon/icon.svg",

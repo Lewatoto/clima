@@ -1,7 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+
 #contenido {
     width: 80%;
     margin: 0 auto;
     background: yellow;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
 }
 
 #ciudad {
@@ -9,6 +13,7 @@
     width: 80%;
     float:left;
     color: white;
+    font-size: 2em;
 }
 
 #temp_a{
@@ -44,6 +49,9 @@
     color: white;
 }
 
+#dia_1n{
+    width: 100%;
+}
 
 #img_1{
     background: brown;
@@ -55,6 +63,25 @@
     width: 30%;
     background: lightsteelblue;
     float: left;
+    text-align: right;
+}
+
+#dia_2n{
+    width: 100%;
+    float: left;
+}
+
+#img_2{
+    background: limegreen;
+    width: 70%;
+    float: left;
+}
+
+#temp_mm_2{
+    width: 30%;
+    background: lightsteelblue;
+    float: left;
+    text-align: right;
 }
 
 #organizador1{

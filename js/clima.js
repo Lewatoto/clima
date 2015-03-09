@@ -37,14 +37,30 @@ navigator.geolocation.getCurrentPosition(function (position) {
         // ingresando los datos en variables
         var temp_min_1 = datos.list[1].temp.min - 273.15; //temperatura minima del dia 1
         var temp_max_1 = datos.list[1].temp.max - 273.15; //temperatura maxima del dia 1
-        var icon_d_1 = datos.list[0].weather[0].icon; //indica que icono usar.día 1
-        var cambio_1 = './img/svg/' + icon_d + '.svg';
+        var icon_d_1 = datos.list[1].weather[0].icon; //indica que icono usar.día 1
+        var cambio_1 = './img/svg/' + icon_d_1 + '.svg';
         
         // Mostrando los datos
         $("#min_1").append(temp_min_1.toFixed(2)+"°C");
         $("#max_1").append(temp_max_1.toFixed(2)+"°C");
         $("#dia_1_i").attr("src",cambio_1);
         $("#dia_1n").append(dias[fecha.getDay()+1]);
+        
+        // ==============================================================
+        // =                      Datos día 2                           =
+        // ==============================================================
+        
+        // ingresando los datos en variables
+        var temp_min_2 = datos.list[2].temp.min - 273.15; //temperatura minima del dia 2
+        var temp_max_2 = datos.list[2].temp.max - 273.15; //temperatura maxima del dia 2
+        var icon_d_2 = datos.list[2].weather[0].icon; //indica que icono usar.día 2
+        var cambio_2 = './img/svg/' + icon_d_2 + '.svg';
+        
+        // Mostrando los datos
+        $("#min_2").append(temp_min_2.toFixed(2)+"°C");
+        $("#max_2").append(temp_max_2.toFixed(2)+"°C");
+        $("#dia_2_i").attr("src",cambio_2);
+        $("#dia_2n").append(dias[fecha.getDay()+2]);
     });
 
 }, geo_options);
