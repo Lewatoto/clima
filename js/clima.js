@@ -35,6 +35,7 @@ function fondo (hora){
     }
 }
 
+
 function clima (){
     navigator.geolocation.getCurrentPosition(function (position) {
         var lat = position.coords.latitude;
@@ -105,7 +106,7 @@ function clima (){
 
         });
 
-    }, errorCallback, geo_options);
+    }, errorCallback);
 
     var geo_options = {
       enableHighAccuracy: true, 
@@ -117,7 +118,6 @@ function clima (){
         alert('ERROR(' + error.code + '): ' + error.message);
     };
 };
-
 
 
 $(window).load(function(){
