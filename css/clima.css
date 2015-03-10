@@ -26,7 +26,6 @@ body{
 }
 
 #ciudad {
-    //background: blue;
     width: 80%;
     float:left;
     color: white;
@@ -34,7 +33,6 @@ body{
 }
 
 #temp_a{
-    //background: green;
     width: 20%;
     float: left;
     color: white;
@@ -43,7 +41,6 @@ body{
 }
 
 #descripcion{
-    //background: gray;
     margin: 0 auto;
     clear: both;
     text-align: center;
@@ -52,19 +49,17 @@ body{
 
 #temp_mm {
     width: 25%;
-    //background: orange;
     float: left;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #img_hoy{
-    width: 50%;
-    //background: red;
+    width: 45%;
     float: left
 }
 
 #dias_2{
-    width: 25%;
+    width: 30%;
     background: rgba(250,250,250,0.2);
     float: left;
     color: white;
@@ -78,17 +73,14 @@ body{
 }
 
 #img_1{
-    //background: brown;
     width: 60%;
     float: left;
 }
 
 #temp_mm_1{
     width: 35%;
-    //background: lightsteelblue;
     float: left;
     text-align: right;
-    padding-right: 1rem;
 }
 
 #dia_2n{
@@ -98,17 +90,19 @@ body{
 }
 
 #img_2{
-    //background: limegreen;
     width: 60%;
     float: left;
+    padding-bottom: 1rem;
 }
 
 #temp_mm_2{
     width: 35%;
-    padding-right: 1rem;
-    ///background: lightsteelblue;
     float: left;
     text-align: right;
+}
+
+#sb-script{
+    padding-top: 1rem;
 }
 
 #organizador1{

@@ -4,17 +4,34 @@ var hora_h = fecha.getHours();
 var p_dia;
 
 function fondo (hora){
-    if (hora >= 4 && hora < 8){
-        $('#estado_hoy').css({"background": "linear-gradient(to top, #234054, #0b2b42, #061927)"});
+    if (hora >= 0 && hora < 5){
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #0b2b42, #071e2e, #010507)"});
     }
-    if (hora >= 8 && hora < 17){
-        $('#estado_hoy').css({"background": "linear-gradient(to top, #234054, #0b2b42, #061927)"});
+    if (hora >= 4 && hora < 5){
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #A09FA4, #586379, #27334B)"});
+    }
+    /*
+    if (hora >= 5 && hora < 6){
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #FEB574, #F6B283, #BF9995)"});
+    }
+    */
+    if (hora >= 5 && hora < 6){
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #FEB574, #F6B283, #BF9995)"});
+    }
+    if (hora >= 6 && hora < 8){
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #A2AEC3, #90A1BD, #8796B7)"});
+    }
+    if (hora >= 8 && hora < 16){
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #AAC3E1, #6893BE, #46759F)"});
+    }
+    if (hora >= 16 && hora < 17){
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #E4AC8B, #A8898F, #656074)"});
     }
     if (hora >= 17 && hora < 19){
-        $('#estado_hoy').css({"background": "linear-gradient(to top, #234054, #0b2b42, #061927)"});
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #2E3C5F, #192649, #080F2A)"});
     }
     if (hora >= 19 && hora < 24){
-        $('#estado_hoy').css({"background": "linear-gradient(to top, #234054, #0b2b42, #061927)"});
+        $('#estado_hoy').css({"background": "linear-gradient(to top, #0b2b42, #071e2e, #010507)"});
     }
 }
 
@@ -83,7 +100,7 @@ navigator.geolocation.getCurrentPosition(function (position) {
         $("#dia_2n").append(" " + dias[fecha.getDay()+2]);
         
         //cambiar el color de fondo
-        fondo(hora_h);
+        fondo(19);
         
     });
 
