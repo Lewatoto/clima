@@ -106,7 +106,7 @@ function clima (){
 
         });
 
-    }, errorCallback);
+    }, errorCallback, geo_options);
 
     var geo_options = {
       enableHighAccuracy: true, 
