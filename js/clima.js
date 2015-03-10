@@ -104,13 +104,17 @@ function clima (){
 
         });
 
-    }, geo_options);
+    }, errorCallback, geo_options);
 
     var geo_options = {
       enableHighAccuracy: true, 
       maximumAge        : 60000, 
       timeout           : 5000
     };
+};
+
+function errorCallback(error) {
+  alert('ERROR(' + error.code + '): ' + error.message);
 };
 
 $(window).load(function(){
