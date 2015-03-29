@@ -112,3 +112,71 @@ body{
 footer{
     background: blueviolet;
 }
+
+@media screen and (max-width:640px){
+    
+    body{
+        font-size: .5rem;
+    }
+    
+    #estado_hoy{
+        padding: 0.5rem;
+    }
+    
+    #contenido {
+        width: 100%;
+    }
+    
+    #ciudad, #temp_a, #descripcion, #temp_mm, #dia_1n, #dia_2n {
+        font-size: 1.4rem;
+    }
+    
+    #temp_mm {
+        padding-top: 1.5rem; 
+    }
+    
+    #temp_mm_1, #temp_mm_2 {
+        font-size: 1rem
+    }
+}
+
+@media screen and (max-width:360px){
+    
+    body{
+        font-size: .5rem;
+    }
+    
+    #estado_hoy{
+        padding: 0.5rem;
+    }
+    
+    #contenido {
+        width: 100%;
+    }
+    
+    #ciudad, #temp_a, #descripcion, #dia_1n, #dia_2n {
+        font-size: 1.4rem;
+    }
+    
+    #temp_mm{
+       font-size: 1.3rem;
+       width: 20%;
+       padding-top: 1.2rem;
+       
+    }
+    
+    #img_hoy {
+       width: 80%
+
+    }
+    
+    #dias_2{
+       clear: both;
+       margin: 0 auto;
+       width: 100%;
+    }
+    
+    #temp_mm_1, #temp_mm_2 {
+        font-size: 1.4rem
+    }
+}
