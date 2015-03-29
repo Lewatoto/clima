@@ -1,4 +1,4 @@
-var dias = new Array('Dom','Lun','Mar','Mie','Jue','Vie','Sab');
+var dias = new Array('Dom','Lun','Mar','Mie','Jue','Vie','Sab','Dom','Lun');
 var fecha = new Date();
 var hora_h = fecha.getHours();
 var p_dia;
